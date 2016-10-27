@@ -1,0 +1,63 @@
+.head-text {
+	padding: 50px 45px;
+	background: @color-dark-white;
+	text-align: center;
+	border-bottom: 1px solid @color-bd-gray;
+}
+
+.services {
+	padding: 60px 0 90px;
+		&_item {
+			height: 385px;
+			padding: 25px;
+			margin-bottom: 30px;
+			overflow: hidden;
+			background: @color-dark-white;
+			box-shadow: 1px 1px 5px #EFEFEF;
+			text-align: center;
+
+				&_img {
+					height: 39%;
+					background: 50% no-repeat;
+
+						&.develop {
+							background-image: url(../../img/icon_web_development.png);
+						}
+
+						&.design {
+							background-image: url(../../img/icon_graph_design.png);
+						}
+
+						&.seo {
+							background-image: url(../../img/icon_seo.png);
+						}
+
+						&.support {
+							background-image: url(../../img/icon_support.png);
+						}
+
+						&.polygraphy {
+							background-image: url(../../img/icon_polygraphy.png);
+						}
+				}
+
+				&_text {
+
+						h2 {
+							color: @color-orange;
+						}
+
+						p {
+							margin: 28px 0;
+						}
+				}
+
+				&_btn {
+					p {
+						color: @color-light-gray;
+						margin-top: 5px;
+					}
+				}
+		}
+}
+

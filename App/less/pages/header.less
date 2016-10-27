@@ -1,0 +1,115 @@
+.header {
+	text-align: center;
+	padding-top: 10px;
+	background: url(../../img/background_layer.png),rgba(0,0,0,.15);
+
+	&_top {
+		position: relative;
+	}
+
+	&_wrapp {
+		background: url(../../img/background1.jpg) 50% 75% no-repeat;
+		.background-size(cover);
+	}
+}
+
+.logo {
+	display: inline-block;
+	height: 138px;
+	width: 156px;
+	background: url(../../img/logo_internal.png) 50% no-repeat;
+	.background-size(contain);
+
+		&:hover {
+			background: url(../../img/logo_internal_hover.png) 50% no-repeat;
+		}
+}
+
+.toggl-lang {
+	padding: 4px 25px 4px 4px;
+	line-height: 10px;
+	border: 2px solid @color-white;
+	border-radius: 3px;
+	background: url(../../img/arrow_languages.png) 80% 50%  no-repeat, transparent;
+	color: @color-white;
+	font-size: .7em;
+	text-transform: uppercase;
+	margin-top: 20px;
+	position: absolute;
+	right: 0;
+
+		option {
+			background: @color-blue;
+		}
+}
+
+.menu {
+	display: inline-block;
+	border-radius: 5px;
+	padding: 10px 50px 15px;
+	margin-top: 5px;
+
+	&_btn {
+		display: inline-block;
+		padding: 3px 12px;
+		border: 2px solid @color-white;
+		border-radius: 7px;
+		font-size: 1.5em;
+		color: @color-white;
+		cursor: pointer;
+		margin-bottom: 25px;
+		.transition(color,.2s);
+			
+			.fa-angle-up {
+				display: none;
+			}	
+
+			&:hover {
+				background: @color-white;
+				color: @color-light-gray;
+			}
+
+			&.menu_btn__active {
+				border: 2px solid @color-blue;
+				color: @color-blue ;
+
+					i {
+						font-weight: @font-bold;
+					}
+
+					.fa-angle-up {
+						display:inline;
+					}
+
+					.fa-bars {
+						display:none;
+					}
+
+					&:hover {
+						background: @color-blue;
+						color: @color-white;
+					}
+			}	
+	}
+
+	ul {
+		font-size: .85em;
+		line-height: 2.2em;
+		display: none;
+
+			a {
+				&:hover {
+					color: @color-light-gray;
+				}
+			}
+	}
+
+	&.menu__active {
+		background-color: @color-white;
+
+		ul {
+			// opacity: 1;
+			display: block;
+		}
+	}
+}

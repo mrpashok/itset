@@ -1,0 +1,122 @@
+body {
+	font: 14px/1.5 'MyriadPro', sans-serif;
+	color: @color-gray;
+}
+
+.container {
+	max-width: 1000px;
+}
+
+a {
+	.transition(all,.3s);
+}
+
+select {
+  /*for WebKit*/
+ -webkit-appearance: none;
+ /* for FF */
+  -moz-appearance: none;
+  text-indent: 0.01px; 
+  text-overflow: '';
+  /* for IE */
+  -ms-appearance: none;
+  appearance: none!important;
+
+  	&:focus,
+  	&:active {
+  		outline: none;
+  	}
+}
+
+input {
+	&:focus,
+  	&:active {
+  		outline: none;
+  	}
+}
+
+ul li {
+	list-style: none;
+}
+
+h1 {
+	font-size: 1.86em;
+}
+
+h2 {
+	font-size: 1.43em;
+}
+
+h3 {
+	font-size: 1.14em;
+	color: @color-light-gray;
+}
+
+.more {
+	text-decoration: underline;
+
+		&:hover {
+			text-decoration: none;
+		}
+}
+
+.btn {
+	border: 2px solid ;
+	border-radius: 5px;
+	padding: 7px 45px;
+	width: 200px;
+
+		&-order {
+			color: @color-white;
+			background: @color-orange;
+			border: none;
+
+				&:hover {
+					background: saturate(@color-orange, 20%);
+					color: @color-white;
+				}
+		}
+}
+
+.btn-feedback {
+	color: @color-white;
+	border-color:@color-white;
+	
+		&:hover {
+			background-color: @color-white;
+			color: @color-blue;
+		}
+}
+
+.learn-more {
+	color: @color-gray;
+	border-color:@color-gray;
+
+		&:hover {
+			background-color: @color-gray;
+			color: @color-white;
+		}
+}
+
+.btn__round {
+	display: inline-block;
+	padding: 7px 21px;
+	border: 2px solid;
+	border-radius: 50%;
+	font-size: 2.4em;
+
+		&__white {
+			border-color: @color-white;
+			color: @color-white;
+
+				&:hover {
+					color: @color-light-gray;
+					background-color: @color-white;
+				}
+		}
+
+		&__sm {
+			padding: 0 8px;
+			font-size: 1.3em;
+		}
+}

@@ -1,0 +1,83 @@
+.soc {
+	&__min {
+		margin: 0 0 10px;
+		text-align: center;
+		.soc_item {
+			display: inline-block;
+			width: 36px;
+			height: 36px;
+			background: 50% no-repeat;
+			margin-right: 10px;
+			cursor: pointer;
+			position: relative;
+
+				&:last-of-type {
+					margin-right: 0;
+				}
+		}
+
+		.fb {
+			background-image: url(../../img/icon_facebook_small_footer.png);
+
+				&:hover {
+					background-image: url(../../img/icon_facebook_small_hover.png);
+				}
+
+				&:after {
+					content: '';
+				}
+		}
+
+		.vk {
+			background-image: url(../../img/icon_vk_small_footer.png);
+
+				&:hover {
+					background-image: url(../../img/icon_vk_small_hover.png);
+				}
+
+				&:after {
+					content: '';
+				}
+		}
+
+		.tw {
+			background-image: url(../../img/icon_twitter_small_footer.png);
+
+				&:hover {
+					background-image: url(../../img/icon_twitter_small_hover.png);
+				}
+
+				&:after {
+					content: '';
+				}
+		}
+
+		.gl {
+			background-image: url(../../img/icon_gplus_small_footer.png);
+
+				&:hover {
+					background-image: url(../../img/icon_gplus_small_hover.png);
+				}
+
+				&:after {
+					content: '';
+				}
+		}
+	}
+}
+
+.footer {
+	background: @color-bgr-blue;
+	padding: 20px 0;
+	text-align: center;
+	color: @color-white;
+
+		a {
+			color: @color-white;
+			text-transform: uppercase;
+
+				&:hover {
+					color: darken(@color-white, 20%);
+				}
+		}
+}

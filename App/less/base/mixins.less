@@ -1,0 +1,44 @@
+.box-sizing() {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.background-size(@size) {
+  -webkit-background-size: @size;
+  -moz-background-size: @size;
+  -o-background-size: @size;
+  background-size: @size;
+}
+
+.transition(@prop,@dur) {
+  -webkit-transition: @prop @dur;
+  -moz-transition: @prop @dur;
+  -o-transition: @prop @dur;
+  transition: @prop @dur;
+}
+
+.clearfix() {
+  &:after,
+  &:before {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+.transform-scale(@num){
+  -moz-transform: scale(@num);
+  -ms-transform: scale(@num);
+  -webkit-transform: scale(@num);
+  -o-transform: scale(@num);
+  transform: scale(@num);
+}
+
+.transform-origin(@coords) {
+  -webkit-transform-origin: @coords;
+  -moz-transform-origin: @coords;
+  -o-transform-origin: @coords;
+  -ms-transform-origin: @coords;
+  transform-origin: @coords;
+}
