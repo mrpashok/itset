@@ -1,0 +1,47 @@
+.portfolio_menu {
+	padding: 15px 45px;
+	margin-top: 30px;
+	border-bottom: 1px solid @color-bd-gray;
+	display: inline-block;
+
+		a {
+			margin-right: 25px;
+			color: @color-light-gray;
+
+				&:last-child {
+					margin: 0;
+				}
+
+				&:hover {
+					color: @color-gray;
+				}
+		}
+
+		.active {
+			color: @color-gray;
+		}
+}
+
+.pagination {
+	padding: 70px 10px 75px;
+	text-align: center;
+
+		a {
+			display: inline-block;
+			width: 30px;
+			height: 30px;
+			border-radius: 50%;
+			background: @color-light-gray2;
+			color: @color-white;
+			line-height: 30px;
+			margin-right: 5px;
+				
+				&:hover {
+					background: @color-light-gray;
+				}
+		}
+
+		.active {
+			background: @color-light-gray;
+		}
+}

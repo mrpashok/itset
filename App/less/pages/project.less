@@ -1,0 +1,59 @@
+.head-text__bcrumb {
+	padding: 25px 10px 40px;
+
+		h1 {
+			margin-top: 35px;
+		}
+}
+
+.project {
+	&_img {
+		padding: 35px 0 60px 40px;
+		text-align: center;	
+
+			img {
+				max-width: 100%;
+				height: auto;
+				box-shadow: 2px 2px 5px #EFEFEF;
+			}
+	}
+
+	&_txt {
+		padding: 150px 25px 10px 10px;
+
+			h2 {
+				color: @color-orange;
+			}
+
+			p {
+				line-height: 1.7em;
+			}
+	}
+}
+
+.zoom {
+	color: @color-gray;
+	position: relative;
+	margin-top: 20px;
+		&::before {
+			position: absolute;
+			left: -35px;
+		}
+
+		&:hover {
+			text-decoration: underline;
+		}
+}
+
+.sm-padd {
+	padding: 35px 15px;
+
+		.btn-order {
+			margin-top: 30px;
+		}
+
+		p {
+			margin: 10px 0 5px;
+			color: @color-light-gray;
+		}
+}

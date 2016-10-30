@@ -301,6 +301,18 @@
 				.fusion {
 					background-image: url(../../img/site3.jpg);
 				}
+
+				.nexus {
+					background-image: url(../../img/site4.jpg);
+				}
+
+				.nimble {
+					background-image: url(../../img/site5.jpg);
+				}
+
+				.styleshop {
+					background-image: url(../../img/site6.jpg);
+				}
 		}
 }
 
@@ -334,7 +346,7 @@
 
 		&_social {
 			padding: 35px 10px 105px;
-			border-bottom: 1px solid @color-light-gray2;
+			border-bottom: 1px solid @color-bd-gray;
 		}
 }
 
@@ -464,22 +476,21 @@
 	}
 }
 
-.contacts {
-	footer {
-		background: @color-bgr-blue;
-		color: @color-white;
-		height: 40px;
-		position: absolute;
-		bottom: 0;
-		width: 100%;
 
-			a {
-				color: @color-white;
-				text-transform: uppercase;
+.footer {
+	background: @color-bgr-blue;
+	color: @color-white;
+	// position: absolute;
+	// bottom: 0;
+	width: 100%;
+	padding: 15px 0;
+	text-align: center;
 
-					&:hover {
-						color: darken(@color-white,20%);
-					}
-			}
-	}
+		a {
+			color: @color-white;
+			text-transform: uppercase;
+				&:hover {
+					color: darken(@color-white,20%);
+				}
+		}
 }
