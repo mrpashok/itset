@@ -16,7 +16,7 @@
 	
 	<!-- Js -->
 	<!-- <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script> -->
-	<script src="js/jquery.js"></script>
+	<script src="js/jquery-3.1.1.min.js"></script>
 </head>
 <body>
 	<div class="header_wrapp">
@@ -108,13 +108,40 @@
 		<div class="container">
 			<h1>Понравился проект?</h1>
 			<h3>Так же трепетно мы разработаем и ваш!</h3>
-			<a href="#" class="btn btn-order">Заказать</a>
+			<a href="#" class="btn btn-order" data-toggle="modal" data-target=".order">Заказать</a>
 			<p>или</p>
 			<a href="#" class="more">Посмотреть другие проекты</a>
 		</div>
 	</section>
 
-					
+	<!-- modal windows -->
+		<div class="modal fade order" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<h2>Заявка на заказ</h2>
+					<p>Пожалуйста, заполните форму заказа. Мы обязательно свяжемся с вами в течение часа!</p>
+					<form method="post" action="#">
+						<input type="text" name="name" placeholder="Ваше имя" required><br>
+						<input type="email" name="email" placeholder="Ваш e-mail">
+						<span>или</span>
+						<input type="tel" name="tel" placeholder="Ваш телефон" required>
+						<textarea name="message" placeholder="Ваше сообщение" required></textarea>
+						<p>Вы должны заполнить хотя бы один из вариантов связи с вами</p>
+						<button type="submit" class="btn btn-order" data-toggle="modal" data-target=".order-success">Отправить</button>	
+					</form>
+				</div>
+			</div>
+		</div>
+	
+		<div class="modal fade order-success" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<h2>Заявка отправлена!</h2>
+					<p>Спасибо! В течение часа мы свяжемся с вами.</p>
+					<a href="#" class="btn learn-more">Вернуться к сайту</a>
+				</div>
+			</div>
+		</div>
 	<footer class="footer_soc">
 		<div class="container">
 			<div class="soc soc__min">
@@ -127,6 +154,7 @@
 		</div>
 	</footer>
 	<script src="js/jquery.fullPage.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
 	<script src="js/custom.js"></script>
 </body>
 </html>
